@@ -34,7 +34,6 @@ def get_unique_external_data(questions_num: int, db: Session) -> list | None:
         to_save.append(
             Question(question_text=question["question"], answer_text=question["answer"])
         )
-    print(to_save)
     return to_save
 
 
